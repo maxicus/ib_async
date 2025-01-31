@@ -7,14 +7,14 @@ from contextlib import suppress
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Set, TYPE_CHECKING, Tuple, Union, cast
 
-from ib_async.contract import (
+from .contract import (
     Contract,
     ContractDescription,
     ContractDetails,
     DeltaNeutralContract,
     ScanData,
 )
-from ib_async.objects import (
+from .objects import (
     AccountValue,
     BarData,
     BarDataList,
@@ -56,9 +56,9 @@ from ib_async.objects import (
     TickData,
     TradeLogEntry,
 )
-from ib_async.order import Order, OrderState, OrderStatus, Trade
-from ib_async.ticker import Ticker
-from ib_async.util import (
+from .order import Order, OrderState, OrderStatus, Trade
+from .ticker import Ticker
+from .util import (
     UNSET_DOUBLE,
     UNSET_INTEGER,
     dataclassAsDict,
@@ -70,7 +70,7 @@ from ib_async.util import (
 )
 
 if TYPE_CHECKING:
-    from ib_async.ib import IB
+    from .ib import IB
 
 
 OrderKeyType = Union[int, Tuple[int, int]]

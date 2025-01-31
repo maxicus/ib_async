@@ -4,7 +4,7 @@ import datetime as dt
 from dataclasses import dataclass, field
 from typing import List, NamedTuple, Optional
 
-import ib_async.util as util
+from . import util
 
 
 @dataclass
