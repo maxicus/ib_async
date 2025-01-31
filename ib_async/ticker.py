@@ -6,8 +6,8 @@ from typing import ClassVar, List, Optional, Union
 
 from eventkit import Event, Op
 
-from ib_async.contract import Contract
-from ib_async.objects import (
+from .contract import Contract
+from .objects import (
     DOMLevel,
     Dividends,
     FundamentalRatios,
@@ -18,7 +18,7 @@ from ib_async.objects import (
     TickByTickMidPoint,
     TickData,
 )
-from ib_async.util import dataclassRepr, isNan
+from .util import dataclassRepr, isNan
 
 nan = float("nan")
 

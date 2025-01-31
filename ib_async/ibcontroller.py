@@ -9,9 +9,9 @@ from typing import ClassVar
 
 from eventkit import Event
 
-import ib_async.util as util
-from ib_async.contract import Contract, Forex
-from ib_async.ib import IB
+from . import util
+from .contract import Contract, Forex
+from .ib import IB
 
 
 @dataclass

@@ -6,8 +6,8 @@ import xml.etree.ElementTree as et
 from contextlib import suppress
 from urllib.request import urlopen
 
-from ib_async import util
-from ib_async.objects import DynamicObject
+from . import util
+from .objects import DynamicObject
 
 _logger = logging.getLogger("ib_async.flexreport")
 

@@ -10,10 +10,10 @@ from typing import Any, Awaitable, Dict, Iterator, List, Optional, Union
 from eventkit import Event
 from enum import Flag, auto
 
-import ib_async.util as util
-from ib_async.client import Client
-from ib_async.contract import Contract, ContractDescription, ContractDetails
-from ib_async.objects import (
+from . import util
+from .client import Client
+from .contract import Contract, ContractDescription, ContractDetails
+from .objects import (
     AccountValue,
     BarDataList,
     DepthMktDataDescription,
@@ -42,7 +42,7 @@ from ib_async.objects import (
     TradeLogEntry,
     WshEventData,
 )
-from ib_async.order import (
+from .order import (
     BracketOrder,
     LimitOrder,
     Order,
@@ -51,8 +51,8 @@ from ib_async.order import (
     StopOrder,
     Trade,
 )
-from ib_async.ticker import Ticker
-from ib_async.wrapper import Wrapper
+from .ticker import Ticker
+from .wrapper import Wrapper
 
 
 class StartupFetch(Flag):
